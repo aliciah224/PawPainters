@@ -8,9 +8,10 @@ public class WallTrigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag("WallTrigger"))
         {
-            Instantiate(wallSection, new Vector3(0, 14, 0), Quaternion.identity);
+            Instantiate(wallSection, new Vector3(0, 15, 0), Quaternion.identity);
+            Debug.Log("Trigger Hit!");
         }
     }
 }
