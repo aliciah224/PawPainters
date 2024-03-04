@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    
-    
+    public GameObject parent;
+
 
     // Start is called before the first frame update
     void Start()
@@ -30,6 +30,19 @@ public class GameManager : MonoBehaviour
             }
 
 
+        }
+    }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+
+            parent.SetActive(true);
+            Time.timeScale = 0;
+
+
+            Debug.Log("Player has lost");
         }
     }
 }
