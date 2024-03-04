@@ -5,6 +5,11 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public GameObject parent;
+    public GameObject restartButton;
+    public GameObject quitGameButton;
+    public GameObject dryFoodCount;
+    public GameObject cannedTunaCount; 
+
 
 
     // Start is called before the first frame update
@@ -40,6 +45,7 @@ public class GameManager : MonoBehaviour
 
             parent.SetActive(true);
             Time.timeScale = 0;
+
 
 
             Debug.Log("Player has lost");
