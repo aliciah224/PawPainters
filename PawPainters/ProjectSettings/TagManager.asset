@@ -8,6 +8,8 @@ TagManager:
   - Background
   - Trigger
   - WallTrigger
+  - EnableTrigger
+  - WallSections
   layers:
   - Default
   - TransparentFX

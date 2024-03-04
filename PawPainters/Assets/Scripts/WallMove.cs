@@ -4,15 +4,38 @@ using UnityEngine;
 
 public class WallMove : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+
+    public bool wallMoved = false;
+
+    private void Start()
     {
+        wallMoved = true;
+
         
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(0, -2, 0) * Time.deltaTime;
+   
+        
+
+        if (wallMoved == true)
+        {
+            wallMove();
+            Debug.Log("Wall has moved");
+
+        }
+
+    
+
+        void wallMove()
+            {
+               transform.position += new Vector3(0, -2, 0) * Time.deltaTime;
+            }
+        
+            
+        
+        
     }
 }
