@@ -6,7 +6,7 @@ public class WallMove : MonoBehaviour
 {
 
     public bool wallMoved = false;
-
+    
     private void Start()
     {
         wallMoved = true;
@@ -23,7 +23,7 @@ public class WallMove : MonoBehaviour
         if (wallMoved == true)
         {
             wallMove();
-            Debug.Log("Wall has moved");
+           // Debug.Log("Wall has moved");
 
         }
 

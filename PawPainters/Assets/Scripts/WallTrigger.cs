@@ -17,12 +17,18 @@ public class WallTrigger : MonoBehaviour
     public int walltriggersectionNum;
 
 
-
-
     public bool alreadyTriggered = false;
     public GameObject box2DTrigger;
     public GameObject enableTrigger;
-    
+    public GameObject loseTrigger;
+
+
+    public bool gameLose = false;
+    public GameObject parent;
+
+
+
+
 
 
 
@@ -108,7 +114,24 @@ public class WallTrigger : MonoBehaviour
 
         }
 
-          
-        
+
     }
+
+    public void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("LoseTrigger"))
+        {
+            Debug.Log("Lose collision");
+
+            
+            parent.SetActive(false);
+         
+           
+
+            Debug.Log("Player has lost");
+        }
+    }
+     
+
+
 }

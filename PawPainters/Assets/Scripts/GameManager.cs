@@ -4,10 +4,15 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    
+    
+
     // Start is called before the first frame update
     void Start()
     {
         Time.timeScale = 0;
+
+       
         
     }
 
@@ -17,7 +22,14 @@ public class GameManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Time.timeScale = 1;
-            
+            GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("StartingButton");
+            foreach (GameObject target in gameObjects)
+            {
+                GameObject.Destroy(target);
+
+            }
+
+
         }
     }
 }

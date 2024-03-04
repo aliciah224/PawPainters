@@ -51,7 +51,7 @@ public class WallMoveOther : MonoBehaviour
             //foreach (GameObject target in wallSections)
             
                 transform.position += new Vector3(0, -1, 0) * Time.deltaTime;
-                Debug.Log("Wall is falling");
+               // Debug.Log("Wall is falling");
 
                
             
