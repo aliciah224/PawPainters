@@ -13,6 +13,7 @@ TagManager:
   - StartingButton
   - LoseTrigger
   - LosingButton
+  - EnableTrigger1
   layers:
   - Default
   - TransparentFX

@@ -51,6 +51,8 @@ public class WallMoveOther : MonoBehaviour
             //foreach (GameObject target in wallSections)
             
                 transform.position += new Vector3(0, -1, 0) * Time.deltaTime;
+                
+
                // Debug.Log("Wall is falling");
 
                
@@ -64,6 +66,16 @@ public class WallMoveOther : MonoBehaviour
 
         }
 
+        /*void Destroybox2DTrigger()
+        {
+            GameObject[] gameObjects = GameObject.FindGameObjectsWithTag("WallTrigger");
+            foreach (GameObject target in gameObjects)
+            {
+                GameObject.Destroy(target);
+
+            }
+            Debug.Log("Wall Trigger has been destroyed");
+        }*/
 
     }
 }
