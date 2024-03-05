@@ -778,7 +778,7 @@ GameObject:
   - component: {fileID: 552829173}
   m_Layer: 0
   m_Name: WallSectionEdge
-  m_TagString: Untagged
+  m_TagString: DestroyWallTrigger
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -793,7 +793,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1136,6 +1136,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 780606734}
   m_CullTransparentMesh: 1
+--- !u!1 &817218647 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7945028758967934880, guid: 70fbe54a7eb95044dae54b7cb7c37d01, type: 3}
+  m_PrefabInstance: {fileID: 1207358313086331706}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &817218651
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 817218647}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f3174204aa9657a48a73addb7c24038c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wallSection: {fileID: 0}
 --- !u!1001 &845423921
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3145,6 +3163,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3218311289519425295, guid: 70fbe54a7eb95044dae54b7cb7c37d01, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3449079466393031769, guid: 70fbe54a7eb95044dae54b7cb7c37d01, type: 3}
       propertyPath: wallSectionEdge
       value: 
@@ -3160,6 +3182,14 @@ PrefabInstance:
     - target: {fileID: 6009284073944341508, guid: 70fbe54a7eb95044dae54b7cb7c37d01, type: 3}
       propertyPath: m_TagString
       value: WallSections
+      objectReference: {fileID: 0}
+    - target: {fileID: 7945028758967934880, guid: 70fbe54a7eb95044dae54b7cb7c37d01, type: 3}
+      propertyPath: m_Name
+      value: CollisionCube
+      objectReference: {fileID: 0}
+    - target: {fileID: 7945028758967934880, guid: 70fbe54a7eb95044dae54b7cb7c37d01, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 70fbe54a7eb95044dae54b7cb7c37d01, type: 3}
