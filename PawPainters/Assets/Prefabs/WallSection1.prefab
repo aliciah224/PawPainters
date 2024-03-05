@@ -580,6 +580,7 @@ MonoBehaviour:
   - {fileID: 7816479270252807676}
   secNum: 0
   spawnTrigger: {fileID: 1488210769940978591}
+  wallSectionEdge: {fileID: 0}
 --- !u!1001 &134897617734860745
 PrefabInstance:
   m_ObjectHideFlags: 0

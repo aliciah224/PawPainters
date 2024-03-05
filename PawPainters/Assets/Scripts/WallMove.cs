@@ -13,10 +13,14 @@ public class WallMove : MonoBehaviour
     public GameObject spawnTrigger;
     [System.NonSerialized]
     public GameObject spawnEdge;
+    public GameObject wallSectionEdge;
+
 
     private void Start()
     {
         spawnEdge = GameObject.Find("SpawnEdge");
+        wallSectionEdge = GameObject.Find("WallSectionEdge");
+
     }
 
     void Update()
@@ -35,6 +39,11 @@ public class WallMove : MonoBehaviour
                 SpawnWall();
             }
         }
+
+       // Debug.Log((Vector3.Distance(spawnEdge.transform.position, wallSectionEdge.transform.position)));
+
+       
+        
     }
     public void SpawnWall()
     {
@@ -43,6 +52,9 @@ public class WallMove : MonoBehaviour
 
         secNum = UnityEngine.Random.Range(0, 3);
         Instantiate(section[secNum], new Vector3(0, 54, 0), Quaternion.identity);
+
     }
+
+
 
 }

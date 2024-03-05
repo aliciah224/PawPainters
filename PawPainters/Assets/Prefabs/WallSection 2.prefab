@@ -242,6 +242,7 @@ MonoBehaviour:
   - {fileID: 7816479270252807676, guid: e010c00b354dd82479b4074f2ea603c2, type: 3}
   secNum: 0
   spawnTrigger: {fileID: 7299582959627422715}
+  wallSectionEdge: {fileID: 0}
 --- !u!1 &5732318922244104817
 GameObject:
   m_ObjectHideFlags: 0
